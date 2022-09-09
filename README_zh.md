@@ -1,11 +1,7 @@
 # kkkkknSignatureView
-
-[**中文说明**](https://https://github.com/kkkknn/kkkkknSignatureView/blob/master/README_zh.md)
-
 一个开源的android 签字控件
 
-## License
-
+## 许可
 ~~~
 MIT License
 
