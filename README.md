@@ -1,5 +1,9 @@
 # kkkkknSignatureView
 
+[![](https://jitpack.io/v/kkkknn/kkkkknSignatureView.svg)](https://jitpack.io/#kkkknn/kkkkknSignatureView)
+
+<img src="https://visitor-badge.glitch.me/badge?page_id=kkkknn.kkkkknSignatureView/&right_color=blue" style='float:left; '/>
+
 [**中文说明**](https://github.com/kkkknn/kkkkknSignatureView/blob/master/README_zh.md)
 
 this is a android signature custom view

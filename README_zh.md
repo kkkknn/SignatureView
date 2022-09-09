@@ -2,6 +2,8 @@
 
 [![](https://jitpack.io/v/kkkknn/kkkkknSignatureView.svg)](https://jitpack.io/#kkkknn/kkkkknSignatureView)
 
+<img src="https://visitor-badge.glitch.me/badge?page_id=kkkknn.kkkkknSignatureView/&right_color=blue" />
+
 一个开源的android 签字控件
 
 ## 示例
