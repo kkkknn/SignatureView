@@ -1,5 +1,20 @@
 # kkkkknSignatureView
+
+[![](https://jitpack.io/v/kkkknn/kkkkknSignatureView.svg)](https://jitpack.io/#kkkknn/kkkkknSignatureView)
+
 一个开源的android 签字控件
+
+## 示例
+
+这里使用的是三星note10+设备演示的
+
+**速度绘制**
+
+![速度绘制](F:\Android_Study\KDraw\images\speed.gif)
+
+**压感绘制（需要设备支持压感）**
+
+![压感绘制](F:\Android_Study\KDraw\images\press.gif)
 
 ## 安装
 
@@ -17,7 +32,7 @@ repositories {
 
 ~~~
 dependencies {
-	implementation 'com.github.kkkknn:kkkkknSignatureView::${LATEST_VERSION}'
+	implementation 'com.github.kkkknn:kkkkknSignatureView:${LATEST_VERSION}'
 }
 ~~~
 
@@ -25,11 +40,50 @@ dependencies {
 
 ## 如何使用
 
+### xml
 
+~~~
+<com.kkkkkn.signatureView.SignView
+        android:layout_margin="10dp"
+        android:id="@+id/sign_view"
+        app:maxPenWidth="20"
+        app:minPenWidth="1"
+        app:zoom="0.9"
+        app:backgroundColor="@color/backGroundColor"
+        app:penColor="@color/penColor"
+        app:drawType="speed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+~~~
+
+**属性说明**
+
+| 参数名          | 参数说明                                                     |
+| --------------- | ------------------------------------------------------------ |
+| maxPenWidth     | 最大线宽                                                     |
+| minPenWidth     | 最小线宽                                                     |
+| zoom            | drawType：speed 基于上一点宽度的缩小比率0.1~1<br />drawType:  其他类型 缩放比例 |
+| backgroundColor | 背景色                                                       |
+| penColor        | 笔颜色                                                       |
+| drawType        | 绘制类型：<br />speed  速度绘制<br />press  压力绘制<br />denseness  密集点绘制（用于触摸点坐标密集情况，例如直接从event事件读取坐标事件） |
+
+### activity
+
+[详见demo内activity](https://github.com/kkkknn/kkkkknSignatureView/blob/master/app/src/main/java/com/kkkkkn/kdraw/MainActivity.java)
+
+**函数说明**
+
+| 函数名                                 | 函数介绍                     | 参数                                                         | 返回值     |
+| -------------------------------------- | ---------------------------- | ------------------------------------------------------------ | ---------- |
+| void onTouch(PenPoint point)           | 添加触摸点，用于绘制         | point 坐标点实体类，[具体实现](https://github.com/kkkknn/kkkkknSignatureView/blob/master/app/SignatureView/src/main/java/com/kkkkkn/signatureView/PenPoint.java) | 无         |
+| void clear()                           | 清空画布                     | 无                                                           | 无         |
+| void setAllowTouch(boolean allowTouch) | 设置是否相应ontouchevent事件 | boolean                                                      | 无         |
+| boolean isAllowTouch()                 | 是否允许相应ontouchevent事件 | 无                                                           | boolean    |
+| Bitmap getSignatureBitmap()            | 获取当前的bitmap图像         | 无                                                           | bitmap图像 |
 
 ## 鸣谢
 
-
+速度绘制是从这个项目搞的[android-signaturepad](https://github.com/gcacace/android-signaturepad)
 
 ## 许可
 

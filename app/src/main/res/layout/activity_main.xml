@@ -14,7 +14,7 @@
         app:zoom="0.9"
         app:backgroundColor="@color/backGroundColor"
         app:penColor="@color/penColor"
-        app:drawType="speed"
+        app:drawType="denseness"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

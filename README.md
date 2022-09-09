@@ -2,7 +2,84 @@
 
 [**中文说明**](https://github.com/kkkknn/kkkkknSignatureView/blob/master/README_zh.md)
 
-一个开源的android 签字控件
+this is a android signature custom view
+
+## Demo Show
+
+this demo run on samsung note10+, the device is support pressure
+
+**speed**
+
+![speed](F:\Android_Study\KDraw\images\speed.gif)
+
+**press（device must be support pressure）**
+
+![press](F:\Android_Study\KDraw\images\press.gif)
+
+## Install
+
+**gradle**
+
+~~~
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+~~~
+
+~~~
+dependencies {
+	implementation 'com.github.kkkknn:kkkkknSignatureView:${LATEST_VERSION}'
+}
+~~~
+
+## How to use
+
+
+### xml
+
+~~~
+<com.kkkkkn.signatureView.SignView
+        android:layout_margin="10dp"
+        android:id="@+id/sign_view"
+        app:maxPenWidth="20"
+        app:minPenWidth="1"
+        app:zoom="0.9"
+        app:backgroundColor="@color/backGroundColor"
+        app:penColor="@color/penColor"
+        app:drawType="speed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+~~~
+
+**parameter description**
+
+| parameter          | description                                                     |
+| --------------- | ------------------------------------------------------------ |
+| maxPenWidth     | the paint max width                                                     |
+| minPenWidth     | the paint max width                                                     |
+| zoom            | drawType：speed reduction factor based on the previous point range 0.1~1<br />drawType:  others zoom |
+| backgroundColor | canvas color                                                       |
+| penColor        | paint color                                                     |
+| drawType        | type：<br />speed <br />press <br />denseness （Used in the case of dense touch point coordinates, such as directly reading coordinate events from event points） |
+
+### activity
+
+[See activity in the demo](https://github.com/kkkknn/kkkkknSignatureView/blob/master/app/src/main/java/com/kkkkkn/kdraw/MainActivity.java)
+
+**function description**
+
+| function                                 | function info                     | parameter                                                         | return     |
+| -------------------------------------- | ---------------------------- | ------------------------------------------------------------ | ---------- |
+| void onTouch(PenPoint point)           | if you don't want to use the onTouchEvent to listen for touch events,you can use this function to draw points           | custom point class [Entity](https://github.com/kkkknn/kkkkknSignatureView/blob/master/app/SignatureView/src/main/java/com/kkkkkn/signatureView/PenPoint.java) | void         |
+| void clear()                           | clear canvas                     | void                                                           | 无         |
+| void setAllowTouch(boolean allowTouch) | set use onTouchEvent  | boolean                                                      | 无         |
+| boolean isAllowTouch()                 | get is use onTouchEvent | void                                                           | boolean    |
+| Bitmap getSignatureBitmap()            | get the current bitmap        | void                                                           | bitmap |
+
+## Thanks
+
+speed draw is use the project [android-signaturepad](https://github.com/gcacace/android-signaturepad)
+
 
 ## License
 
