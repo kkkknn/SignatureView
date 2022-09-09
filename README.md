@@ -10,11 +10,11 @@ this demo run on samsung note10+, the device is support pressure
 
 **speed**
 
-![speed](F:\Android_Study\KDraw\images\speed.gif)
+![speed](https://github.com/kkkknn/kkkkknSignatureView/blob/master/images/speed.gif)
 
 **press（device must be support pressure）**
 
-![press](F:\Android_Study\KDraw\images\press.gif)
+![press](https://github.com/kkkknn/kkkkknSignatureView/blob/master/images/press.gif)
 
 ## Install
 

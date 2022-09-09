@@ -10,11 +10,11 @@
 
 **速度绘制**
 
-![速度绘制](F:\Android_Study\KDraw\images\speed.gif)
+![速度绘制](https://github.com/kkkknn/kkkkknSignatureView/blob/master/images/speed.gif)
 
 **压感绘制（需要设备支持压感）**
 
-![压感绘制](F:\Android_Study\KDraw\images\press.gif)
+![压感绘制](https://github.com/kkkknn/kkkkknSignatureView/blob/master/images/press.gif)
 
 ## 安装
 
