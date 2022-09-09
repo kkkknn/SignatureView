@@ -1,7 +1,38 @@
 # kkkkknSignatureView
 一个开源的android 签字控件
 
+## 安装
+
+**gradle** 
+
+添加源
+
+~~~
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+~~~
+
+添加依赖
+
+~~~
+dependencies {
+	implementation 'com.github.kkkknn:kkkkknSignatureView::${LATEST_VERSION}'
+}
+~~~
+
+
+
+## 如何使用
+
+
+
+## 鸣谢
+
+
+
 ## 许可
+
 ~~~
 MIT License
 
