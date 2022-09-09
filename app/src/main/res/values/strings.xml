@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KDraw</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_ok">确定</string>
+</resources>

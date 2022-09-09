@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SignView">
+        <attr name="drawType">
+            <enum name="speed" value="0"/>
+            <enum name="press" value="1"/>
+            <enum name="denseness" value="2"/>
+        </attr>
+        <attr name="maxPenWidth" format="integer" />
+        <attr name="minPenWidth" format="integer" />
+        <attr name="penColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="allowTouch" format="boolean" />
+        <attr name="zoom" format="float" />
+
+    </declare-styleable>
+</resources>

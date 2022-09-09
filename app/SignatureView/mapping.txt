@@ -1,0 +1,29 @@
+# compiler: R8
+# compiler_version: 3.2.74
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.0"}
+# pg_map_id: a13d464
+# pg_map_hash: SHA-256 a13d464d61da53de120d1dfa06d701d7b7846dd2e5e8e0f266e3d5ed4b156940
+com.kkkkkn.signatureView.SignView -> com.kkkkkn.signatureView.SignView:
+    java.lang.Thread canvasDraw -> b
+    boolean allowTouch -> a
+    boolean drawing -> c
+    1:1:android.graphics.Bitmap getSignatureBitmap():218:218 -> getSignatureBitmap
+    1:27:boolean onTouchEvent(android.view.MotionEvent):111:137 -> onTouchEvent
+    28:28:boolean onTouchEvent(android.view.MotionEvent):130:130 -> onTouchEvent
+    1:1:boolean performClick():152:152 -> performClick
+    1:1:void setAllowTouch(boolean):210:210 -> setAllowTouch
+    1:35:void surfaceCreated(android.view.SurfaceHolder):161:195 -> surfaceCreated
+    1:1:void surfaceDestroyed(android.view.SurfaceHolder):206:206 -> surfaceDestroyed
+com.kkkkkn.signatureView.SignView$1 -> com.kkkkkn.signatureView.SignView$a:
+    com.kkkkkn.signatureView.SignView this$0 -> a
+    1:1:void <init>(com.kkkkkn.signatureView.SignView):162:162 -> <init>
+    1:1:void run():165:165 -> run
+    2:2:boolean com.kkkkkn.signatureView.SignView.access$000(com.kkkkkn.signatureView.SignView):27:27 -> run
+    2:2:void run():165 -> run
+    3:3:boolean com.kkkkkn.signatureView.SignView.access$100(com.kkkkkn.signatureView.SignView):27:27 -> run
+    3:3:void run():166 -> run
+    4:8:void run():167:171 -> run
+    9:9:android.graphics.Bitmap com.kkkkkn.signatureView.SignView.access$200(com.kkkkkn.signatureView.SignView):27:27 -> run
+    9:9:void run():171 -> run
+    10:26:void run():175:191 -> run

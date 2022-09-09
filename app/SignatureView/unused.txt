@@ -1,0 +1,56 @@
+com.kkkkkn.signatureView.BaseDraw:
+    public abstract void clear()
+    public abstract void initDraw()
+    public abstract void setBackGroundColor(int)
+    public abstract void setBitmap(android.graphics.Bitmap)
+    public abstract void setPenColor(int)
+    public abstract void setWidthRange(int,int)
+    public abstract void setZoom(float)
+com.kkkkkn.signatureView.Bezier
+com.kkkkkn.signatureView.BuildConfig
+com.kkkkkn.signatureView.ControlTimedPoints
+com.kkkkkn.signatureView.DensenessDraw
+com.kkkkkn.signatureView.GeometryMathUtil
+com.kkkkkn.signatureView.PenPath
+com.kkkkkn.signatureView.PenPoint$1
+com.kkkkkn.signatureView.PenPoint:
+    public float sim_low_x
+    public float sim_low_y
+    public float sim_up_x
+    public float sim_up_y
+    public void <init>(java.lang.String)
+    public float distanceTo(com.kkkkkn.signatureView.PenPoint)
+    public boolean hasSim()
+    public com.kkkkkn.signatureView.PenPoint set(float,float)
+    public void setSimLow(org.locationtech.jts.geom.Coordinate)
+    public void setSimUp(org.locationtech.jts.geom.Coordinate)
+    public java.lang.String toArrayString()
+    public java.lang.String toArrayString(int,int)
+    public float velocityFrom(com.kkkkkn.signatureView.PenPoint)
+com.kkkkkn.signatureView.PressDraw
+com.kkkkkn.signatureView.SignView:
+    private static final java.lang.String TAG
+    private int backgroundColor
+    private int drawType
+    private int maxWidth
+    private int minWidth
+    private int penColor
+    private float zoom
+    public void <init>(android.content.Context,android.util.AttributeSet)
+    public void clear()
+    public boolean isAllowTouch()
+    private synthetic void lambda$new$0()
+    public void onTouch(com.kkkkkn.signatureView.PenPoint)
+com.kkkkkn.signatureView.SpeedDraw$1
+com.kkkkkn.signatureView.SpeedDraw
+com.kkkkkn.signatureView.BaseDraw
+com.kkkkkn.signatureView.PenPoint$PEN_TYPE$EnumUnboxingLocalUtility
+com.kkkkkn.signatureView.PenPoint$PEN_TYPE$EnumUnboxingSharedUtility
+com.kkkkkn.signatureView.PenPoint$PEN_TYPE
+com.kkkkkn.signatureView.PenPoint
+com.kkkkkn.signatureView.SignView:
+    public com.kkkkkn.signatureView.BaseDraw baseDraw
+    public android.graphics.Bitmap cacheBitmap
+    public final android.graphics.Paint mPaint
+    public boolean update
+    public static synthetic void access$200(com.kkkkkn.signatureView.SignView)

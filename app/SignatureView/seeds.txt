@@ -1,0 +1,31 @@
+com.kkkkkn.signatureView.R
+com.kkkkkn.signatureView.R$attr
+com.kkkkkn.signatureView.R$styleable
+com.kkkkkn.signatureView.SignView
+com.kkkkkn.signatureView.R$id
+com.kkkkkn.signatureView.R$styleable: int SignView_penColor
+com.kkkkkn.signatureView.R$attr: int minPenWidth
+com.kkkkkn.signatureView.R$styleable: int SignView_drawType
+com.kkkkkn.signatureView.R$styleable: int SignView_minPenWidth
+com.kkkkkn.signatureView.R$id: int speed
+com.kkkkkn.signatureView.R$styleable: int SignView_maxPenWidth
+com.kkkkkn.signatureView.R$styleable: int[] SignView
+com.kkkkkn.signatureView.R$styleable: int SignView_allowTouch
+com.kkkkkn.signatureView.R$id: int press
+com.kkkkkn.signatureView.R$attr: int maxPenWidth
+com.kkkkkn.signatureView.R$styleable: int SignView_backgroundColor
+com.kkkkkn.signatureView.R$styleable: int SignView_zoom
+com.kkkkkn.signatureView.R$attr: int allowTouch
+com.kkkkkn.signatureView.R$id: int denseness
+com.kkkkkn.signatureView.R$attr: int zoom
+com.kkkkkn.signatureView.R$attr: int penColor
+com.kkkkkn.signatureView.R$attr: int drawType
+com.kkkkkn.signatureView.R$attr: int backgroundColor
+com.kkkkkn.signatureView.R$attr: R$attr()
+com.kkkkkn.signatureView.R$id: R$id()
+com.kkkkkn.signatureView.PenPoint$PEN_TYPE: com.kkkkkn.signatureView.PenPoint$PEN_TYPE[] values()
+com.kkkkkn.signatureView.R$styleable: R$styleable()
+com.kkkkkn.signatureView.SignView: void setAllowTouch(boolean)
+com.kkkkkn.signatureView.R: R()
+com.kkkkkn.signatureView.SignView: android.graphics.Bitmap getSignatureBitmap()
+com.kkkkkn.signatureView.PenPoint$PEN_TYPE: com.kkkkkn.signatureView.PenPoint$PEN_TYPE valueOf(java.lang.String)
