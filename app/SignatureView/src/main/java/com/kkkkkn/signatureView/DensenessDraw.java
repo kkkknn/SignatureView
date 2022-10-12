@@ -78,6 +78,7 @@ public class DensenessDraw implements BaseDraw {
 
     private void addPath(PenPoint penPoint) {
         if (penPoint.penType == PenPoint.PEN_TYPE.PEN_DOWN) {
+            path.reset();
             path.moveTo(penPoint.x, penPoint.y);
             lastPoint = penPoint;
             lastWidth = penPoint.pressure*zoom;

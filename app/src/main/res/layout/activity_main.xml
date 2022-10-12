@@ -9,12 +9,12 @@
     <com.kkkkkn.signatureView.SignView
         android:layout_margin="10dp"
         android:id="@+id/sign_view"
-        app:maxPenWidth="20"
+        app:maxPenWidth="10"
         app:minPenWidth="1"
         app:zoom="0.9"
         app:backgroundColor="@color/backGroundColor"
         app:penColor="@color/penColor"
-        app:drawType="denseness"
+        app:drawType="speed"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
