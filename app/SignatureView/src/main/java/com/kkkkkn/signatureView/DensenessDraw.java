@@ -77,25 +77,30 @@ public class DensenessDraw implements BaseDraw {
     }
 
     private void addPath(PenPoint penPoint) {
+        float value_line= penPoint.pressure*zoom;
+        if(value_line>maxWidth){
+            value_line=maxWidth;
+        }else if(value_line<minWidth){
+            value_line=minWidth;
+        }
+
         if (penPoint.penType == PenPoint.PEN_TYPE.PEN_DOWN) {
             path.reset();
             path.moveTo(penPoint.x, penPoint.y);
             lastPoint = penPoint;
-            lastWidth = penPoint.pressure*zoom;
+            lastWidth = value_line;
         } else if (penPoint.penType == PenPoint.PEN_TYPE.PEN_MOVE) {
             float zlx = (penPoint.x + lastPoint.x) / 2;
             float zly = (penPoint.y + lastPoint.y) / 2;
 
-            float valupz = penPoint.pressure*zoom;
-
             path.lineTo(zlx, zly);
 
-            if (lastWidth != valupz) {
-                widthLinkedList.add((float) valupz);
+            if (lastWidth != value_line) {
+                widthLinkedList.add((float) value_line);
                 pathLinkedList.add(path);
                 path = new Path();
                 path.moveTo(lastPoint.x, lastPoint.y);
-                lastWidth = (float) valupz;
+                lastWidth = (float) value_line;
             }
 
 
