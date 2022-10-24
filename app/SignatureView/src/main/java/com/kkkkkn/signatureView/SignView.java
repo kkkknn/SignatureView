@@ -95,6 +95,20 @@ public class SignView extends SurfaceView implements SurfaceHolder.Callback{
         });
     }
 
+    public void setZoom(float zoom){
+        if(baseDraw==null){
+            return;
+        }
+        baseDraw.setZoom(zoom);
+    }
+
+    public void setWidthRange(int maxWidth,int minWidth){
+        if(baseDraw==null){
+            return;
+        }
+        baseDraw.setWidthRange(maxWidth,minWidth);
+    }
+
     /**
      * 手动添加坐标点
      * @param point 坐标点数据
