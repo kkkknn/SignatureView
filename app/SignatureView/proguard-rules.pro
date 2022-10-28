@@ -54,6 +54,9 @@
 
 
 #<自定义View的类>
+-keep class com.kkkkkn.signatureView.BuildConfig {
+   public *;
+}
 -keep class com.kkkkkn.signatureView.SignView {
    public *;
 }
