@@ -79,6 +79,8 @@ dependencies {
 | void setAllowTouch(boolean allowTouch) | set use onTouchEvent  | boolean                                                      | 无         |
 | boolean isAllowTouch()                 | get is use onTouchEvent | void                                                           | boolean    |
 | Bitmap getSignatureBitmap()            | get the current bitmap        | void                                                           | bitmap |
+| void setZoom(float zoom) | set the x, y, press Scale | float | void |
+| void setWidthRange(int maxWidth,int minWidth) | set the maxPenWidth and minPenWidth | int ,int | void |
 
 ## Thanks
 

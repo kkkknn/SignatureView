@@ -41,11 +41,11 @@
 
 #---------------------------------第三方包--开始-------------------------------
 
-#<okhttp3.x>
--dontwarn com.squareup.okhttp3.**
--keep class com.squareup.okhttp3.** { *;}
--dontwarn okio.**
-#</okhttp3.x>
+#<org.locationtech.jts:jts-core:1.19.0>
+-dontwarn org.locationtech.jts.geom.**
+-keep class org.locationtech.jts.geom.Coordinate { *;}
+-keep class org.locationtech.jts.geom.LineSegment { *;}
+#</org.locationtech.jts:jts-core:1.19.0>
 
 
 #----------------------------------第三方包--结束--------------------------
@@ -54,7 +54,10 @@
 
 
 #<自定义View的类>
--keep class com.kkkkkn.signatureView.SignView
+-keep class com.kkkkkn.signatureView.SignView {
+   public *;
+}
+
 #</自定义View的类>
 
 #---------------------------------一些不要混淆的代码--结束------------------

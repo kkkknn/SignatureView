@@ -75,13 +75,15 @@ dependencies {
 
 **函数说明**
 
-| 函数名                                 | 函数介绍                     | 参数                                                         | 返回值     |
-| -------------------------------------- | ---------------------------- | ------------------------------------------------------------ | ---------- |
-| void onTouch(PenPoint point)           | 添加触摸点，用于绘制         | point 坐标点实体类，[具体实现](https://github.com/kkkknn/kkkkknSignatureView/blob/master/app/SignatureView/src/main/java/com/kkkkkn/signatureView/PenPoint.java) | 无         |
-| void clear()                           | 清空画布                     | 无                                                           | 无         |
-| void setAllowTouch(boolean allowTouch) | 设置是否相应ontouchevent事件 | boolean                                                      | 无         |
-| boolean isAllowTouch()                 | 是否允许相应ontouchevent事件 | 无                                                           | boolean    |
-| Bitmap getSignatureBitmap()            | 获取当前的bitmap图像         | 无                                                           | bitmap图像 |
+| 函数名                                        | 函数介绍                     | 参数                                                         | 返回值     |
+| --------------------------------------------- | ---------------------------- | ------------------------------------------------------------ | ---------- |
+| void onTouch(PenPoint point)                  | 添加触摸点，用于绘制         | point 坐标点实体类，[具体实现](https://github.com/kkkknn/kkkkknSignatureView/blob/master/app/SignatureView/src/main/java/com/kkkkkn/signatureView/PenPoint.java) | 无         |
+| void clear()                                  | 清空画布                     | 无                                                           | 无         |
+| void setAllowTouch(boolean allowTouch)        | 设置是否相应ontouchevent事件 | boolean                                                      | 无         |
+| boolean isAllowTouch()                        | 是否允许相应ontouchevent事件 | 无                                                           | boolean    |
+| Bitmap getSignatureBitmap()                   | 获取当前的bitmap图像         | 无                                                           | bitmap图像 |
+| void setZoom(float zoom)                      | 设置坐标点缩放比例           | float                                                        | 无         |
+| void setWidthRange(int maxWidth,int minWidth) | 设置笔迹最大最小宽度         | int，int                                                     | 无         |
 
 ## 鸣谢
 
